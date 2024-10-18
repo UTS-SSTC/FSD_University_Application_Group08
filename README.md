@@ -37,7 +37,7 @@
 
 3. 然后执行
 
-   `git remote add upstream git@github.com:UTS-SSTC/fsd_group08_University_Application.git`
+   `git remote add upstream https://github.com/UTS-SSTC/FSD_University_Application_Group08.git`
 
    绑定一个别名叫做 upstream 的仓库，也就是我们的主仓库；
 
