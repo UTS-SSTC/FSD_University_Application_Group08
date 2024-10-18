@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      alignment="CENTER" spacing="10" fx:controller="org.group08.controller.RegisterController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- 邮箱 -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Email:"           />
+        <TextField fx:id="emailField" promptText="Please enter your email"/>
+    </HBox>
+
+    <!-- 姓名 -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="name:"            />
+        <TextField fx:id="nameField" promptText="Please enter your name"/>
+    </HBox>
+
+    <!-- 密码 -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="password:        "/>
+        <PasswordField fx:id="passwordField" promptText="Please enter your password"/>
+    </HBox>
+
+    <!-- 确认密码 -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="confirm password:"/>
+        <PasswordField fx:id="confirmPasswordField" promptText="Please reenter your password"/>
+    </HBox>
+
+    <!-- 注册按钮 -->
+    <Button text="register" onAction="#register"/>
+    <Button text="back" onAction="#returnIndex"/>
+
+    <!-- 错误信息标签 -->
+    <Label fx:id="errorLabel" textFill="red"/>
+</VBox>

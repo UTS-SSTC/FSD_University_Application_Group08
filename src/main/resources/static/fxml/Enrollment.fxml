@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--todo-->
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      spacing="10" alignment="TOP_CENTER" fx:controller="org.group08.controller.EnrollmentController"
+      prefWidth="800" prefHeight="600">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <!-- 已选科目表格 -->
+    <Label text="已选科目"/>
+    <TableView fx:id="selectedSubjectsTable">
+        <columns>
+            <TableColumn text="科目名" fx:id="subjectNameColumn"/>
+            <TableColumn text="分数" fx:id="scoreColumn"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <!-- 删除按钮 -->
+        <Button text="删除已选科目" onAction="#removeSubject"/>
+    </HBox>
+
+    <!-- 所有科目表格 -->
+    <Label text="所有科目"/>
+    <TableView fx:id="allSubjectsTable">
+        <columns>
+            <TableColumn text="科目名" fx:id="allSubjectNameColumn"/>
+            <TableColumn text="是否已选" fx:id="selectedStatusColumn"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <!-- 选择按钮 -->
+        <Button text="选择科目" onAction="#addSubject"/>
+    </HBox>
+
+    <!-- 修改密码区域 -->
+    <Label text="修改密码"/>
+    <HBox spacing="10">
+        <Label text="原密码:"/>
+        <PasswordField fx:id="oldPasswordField" promptText="输入旧密码"/>
+        <Label text="新密码:"/>
+        <PasswordField fx:id="newPasswordField" promptText="输入新密码"/>
+        <Button text="修改密码" onAction="#changePassword"/>
+    </HBox>
+</VBox>
