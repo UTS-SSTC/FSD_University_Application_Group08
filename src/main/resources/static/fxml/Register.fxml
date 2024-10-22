@@ -12,25 +12,25 @@
 
     <!-- 邮箱 -->
     <HBox spacing="10" alignment="CENTER_LEFT">
-        <Label text="Email:"           />
+        <Label text="Email:" minWidth="150"/>
         <TextField fx:id="emailField" promptText="Please enter your email"/>
     </HBox>
 
     <!-- 姓名 -->
     <HBox spacing="10" alignment="CENTER_LEFT">
-        <Label text="name:"            />
+        <Label text="name:" minWidth="150"/>
         <TextField fx:id="nameField" promptText="Please enter your name"/>
     </HBox>
 
     <!-- 密码 -->
     <HBox spacing="10" alignment="CENTER_LEFT">
-        <Label text="password:        "/>
+        <Label text="password:" minWidth="150"/>
         <PasswordField fx:id="passwordField" promptText="Please enter your password"/>
     </HBox>
 
     <!-- 确认密码 -->
     <HBox spacing="10" alignment="CENTER_LEFT">
-        <Label text="confirm password:"/>
+        <Label text="confirm password:" minWidth="150"/>
         <PasswordField fx:id="confirmPasswordField" promptText="Please reenter your password"/>
     </HBox>
 
