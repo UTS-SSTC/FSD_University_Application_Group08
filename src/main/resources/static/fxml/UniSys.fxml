@@ -28,6 +28,6 @@
     </VBox>
 
     <!-- 登录按钮 -->
-    <Button text="login" fx:id="loginButton" GridPane.rowIndex="3" GridPane.columnIndex="1" onAction="#login"/>
-    <Button text="register" fx:id="registerButton" GridPane.rowIndex="3" GridPane.columnIndex="2" onAction="#register"/>
+    <Button text="login" fx:id="loginButton" GridPane.rowIndex="3" GridPane.columnIndex="0" onAction="#login"/>
+    <Button text="register" fx:id="registerButton" GridPane.rowIndex="3" GridPane.columnIndex="1" onAction="#register"/>
 </GridPane>

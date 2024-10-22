@@ -61,7 +61,7 @@ public class RegisterController {
             return;
         }
 
-        if (RegEX.isValidEmail(email)) {
+        if (!RegEX.isValidEmail(email)) {
             errorLabel.setText("Email is invalided!");
             return;
         }
