@@ -7,6 +7,8 @@ import org.group08.util.RegEX;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Collections;
+import java.util.List;
 
 
 /**
@@ -38,5 +40,10 @@ public class StudentsServiceImpl implements StudentsService {
     @Override
     public int saveStudent(Students student) {
         return studentsMapper.saveStudent(student);
+    }
+
+    @Override
+    public List<Students> getAllStudents() {
+        return studentsMapper.getAllStudents();
     }
 }

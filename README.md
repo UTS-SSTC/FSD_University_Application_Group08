@@ -50,3 +50,7 @@
 4. 修改代码后提交至 Fork 仓库的`develop`分支，提交信息参考`gitmoji`格式：https://github.com/carloscuesta/gitmoji
 
 5. 到 GitHub 上的个人 Fork 仓库里，对主仓库`develop`分支提交 PR 等待 Review
+
+**开发流程**
+1. fxml + view
+2. 界面上的功能 controller 需要的功能从mapper（在xml文件中写sql语句）-》service做

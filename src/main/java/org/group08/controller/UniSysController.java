@@ -9,8 +9,10 @@ import org.group08.entity.Managers;
 import org.group08.entity.Students;
 import org.group08.service.ManagersService;
 import org.group08.service.StudentsService;
+import org.group08.view.AdminView;
 import org.group08.view.RegisterView;
 import org.group08.view.EnrollmentView;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.Resource;
 import java.net.URL;
@@ -41,7 +43,9 @@ public class UniSysController implements Initializable {
 
     @FXML
     public void register() {
-        UniversityApplication.showView(RegisterView.class);
+//        UniversityApplication.showView(RegisterView.class);
+        UniversityApplication.getStage().close();
+        UniversityApplication.showView(AdminView.class);
     }
 
     @FXML

@@ -5,7 +5,6 @@ import org.group08.entity.Students;
 import org.group08.service.ManagersService;
 import org.group08.service.StudentsService;
 import org.group08.util.RegEX;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,10 +19,6 @@ import java.util.Scanner;
  */
 @SpringBootApplication
 public class CliApplication implements CommandLineRunner {
-
-    @Value("${application.type}")
-    private String type;
-
     @Resource
     private StudentsService studentsService;
 
@@ -36,9 +31,7 @@ public class CliApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        if (type.equals("cli")) {
-            index();
-        }
+        index();
     }
 
     private void index() {

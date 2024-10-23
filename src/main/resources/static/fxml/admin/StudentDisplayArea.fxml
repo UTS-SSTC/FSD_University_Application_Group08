@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.group08.controller.AdminController">
+    <TableView fx:id="studentTableView" layoutX="20" layoutY="20" prefHeight="200" prefWidth="400">
+        <!-- 定义ID列 -->
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="100"/>
+            <!-- 定义Name列 -->
+            <TableColumn fx:id="nameColumn" text="Name" prefWidth="150"/>
+            <!-- 定义Email列 -->
+            <TableColumn fx:id="emailColumn" text="Email" prefWidth="150"/>
+        </columns>
+    </TableView>
+</AnchorPane>

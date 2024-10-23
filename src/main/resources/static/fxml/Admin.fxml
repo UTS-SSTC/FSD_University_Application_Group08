@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox spacing="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.group08.controller.AdminController" prefWidth="800" prefHeight="600">
+    <!-- Tab Pane with two tabs -->
+    <TabPane fx:id="mainTabPane">
+        <!-- 文件管理Tab -->
+        <Tab text="File management">
+            <AnchorPane>
+                <fx:include source="admin/FileManagement.fxml"/>
+            </AnchorPane>
+        </Tab>
+
+        <!-- 学生管理Tab -->
+        <Tab text="Students">
+            <AnchorPane>
+                <fx:include source="admin/StudentManagement.fxml"/>
+            </AnchorPane>
+        </Tab>
+    </TabPane>
+
+    <!-- 退出按钮 -->
+    <Button text="Exit" fx:id="exitButton" onAction="#handleExitButton"/>
+</VBox>
+

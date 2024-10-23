@@ -3,6 +3,8 @@ package org.group08.service;
 
 import org.group08.entity.Students;
 
+import java.util.List;
+
 /**
  * @author boosterLEL
  * @apiNote
@@ -14,4 +16,6 @@ public interface StudentsService {
     int checkEmail(String email);
 
     int saveStudent(Students student);
+
+    List<Students> getAllStudents();
 }
