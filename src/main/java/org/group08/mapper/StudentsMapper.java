@@ -3,6 +3,8 @@ package org.group08.mapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.group08.entity.Students;
 
+import java.util.List;
+
 /**
  * @author boosterLEL
  * @apiNote
@@ -31,4 +33,10 @@ public interface StudentsMapper {
      * @return state
      */
     int saveStudent(Students student);
+
+    /**
+     * show students
+     * @return all students
+     */
+    List<Students> getAllStudents();
 }

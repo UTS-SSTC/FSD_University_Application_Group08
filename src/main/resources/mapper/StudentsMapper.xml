@@ -17,4 +17,8 @@
         insert into students
         values (#{id}, #{name}, #{email}, #{password})
     </insert>
+    <select id="getAllStudents" resultType="org.group08.entity.Students">
+        select *
+        from students
+    </select>
 </mapper>
